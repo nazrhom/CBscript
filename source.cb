@@ -1,0 +1,15 @@
+var fs = require('fs')
+
+fs.readFile('./data.json', {encoding: 'UTF8'})
+/* @CB ( err, data ) */
+var str = 'Hello '
+
+process.nextTick()
+/* @CB () */
+console.log('World')
+/* @CB END */
+
+console.log(str + data)
+/* @CB END */
+
+console.log('Hello')
